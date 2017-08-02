@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Que.js</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <div id="que-app">
+      <div>
+        <input q-model="display">
+      </div>
+      <br>
+      <div q-class="title">
+        {{title}}<input q-model="title"> *if the input's value is equal to que, the text will be blue
+      </div>
+      <br>
+      <div q-for="framework of frameworks" q-if="display">
+        <div q-click="alertName(framework.name)" q-class="framework.name">
+          The name of {{framework.name}} is {{framework.name}}
+        </div>
+        <br>
+        <br>
+        Users List:
+        <div q-for="user of framework.users" q-click="alertName(user)">
+          Sr Front End Engineer {{user}}
+        </div>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>

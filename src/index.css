@@ -1,0 +1,23 @@
+.root {
+  color: blue
+}
+
+.backbone {
+  color: grey;
+}
+
+.angular {
+  color: red;
+}
+
+.ember {
+  color: brown;
+}
+
+.react {
+  color: blue;
+}
+
+.vue {
+  color: green;
+}
